@@ -1,0 +1,52 @@
+
+
+body{
+	color:blue;
+	font-size:18px;
+}
+*{
+	padding:0;
+	margin:0;
+}
+.btn1,
+.btn2{
+	width:20px;
+}
+.disable{
+	color:red
+}
+.enable{
+	color:green
+}
+table tr td{
+	text-align: center;
+    padding: 0 50px;
+}
+table thead tr th{
+    position: relative;
+    cursor: pointer;
+}
+.disabled{
+    position: absolute;
+    top: 10px;
+    content: "";
+    border: 5px solid transparent;
+    border-top-color: #454b93;
+    border-top-width: 10px;
+    border-bottom-width: 10px;
+    width: 0;
+    height: 0;
+    right: 5px;
+}
+.able{
+    position: absolute;
+    right: 5px;
+    top: 0px;
+    width: 0;
+    height: 0;
+    content: "";
+    border: 5px solid transparent;
+    border-bottom-color: #454b93;
+    border-bottom-width: 10px;
+    border-top-width: 10px;
+}
