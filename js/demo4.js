@@ -39,7 +39,7 @@ angular.module("myApp",[])
 			Lastname:"rose",
 			Gender:"Female",
 			Salary:18357,
-			Ysalary:149650,
+			Ysalary:146890,
 			Birthday:"1470535903926"
 		}
 	]
