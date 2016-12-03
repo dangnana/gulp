@@ -71,56 +71,21 @@ angular.module("myApp",[])
 	function chage(value,str){
 		if($scope.value==str){
 			$scope.value="-"+str;
+			$scope.a=false;
+			$scope.c=false;
+			$scope.d=false;
+			$scope.e=false;
+			$scope.f=false;
+			$scope.g=false;
 		}else{
 			$scope.value=str;
+			$scope.a="";
+			$scope.c="";
+			$scope.d="";
+			$scope.e="";
+			$scope.f="";
+			$scope.g="";
+
 		}
-	}
-	$scope.one1=function(){
-		$scope.a=true;
-		$scope.c=false;
-		$scope.d=false;
-		$scope.e=false;
-		$scope.f=false;
-		$scope.g=false;
-	}
-	$scope.one2=function(){
-		$scope.a=false;
-		$scope.c=true;
-		$scope.d=false;
-		$scope.e=false;
-		$scope.f=false;
-		$scope.g=false;
-	}
-	$scope.one3=function(){
-		$scope.a=false;
-		$scope.c=false;
-		$scope.d=true;
-		$scope.e=false;
-		$scope.f=false;
-		$scope.g=false;
-	}
-	$scope.one4=function(){
-		$scope.a=false;
-		$scope.c=false;
-		$scope.d=false;
-		$scope.e=true;
-		$scope.f=false;
-		$scope.g=false;
-	}
-	$scope.one5=function(){
-		$scope.a=false;
-		$scope.c=false;
-		$scope.d=false;
-		$scope.e=false;
-		$scope.f=true;
-		$scope.g=false;
-	}
-	$scope.one6=function(){
-		$scope.a=false;
-		$scope.c=false;
-		$scope.d=false;
-		$scope.e=false;
-		$scope.f=false;
-		$scope.g=true;
 	}
 }])
