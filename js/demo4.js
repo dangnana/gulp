@@ -8,7 +8,7 @@ angular.module("myApp",[])
 			Gender:"Female",
 			Salary:18088,
 			Ysalary:123356,
-			Birthday:1470524904525
+			Birthday:"1470524904525"
 		},
 		{
 			Firstname:"merry",
@@ -16,7 +16,7 @@ angular.module("myApp",[])
 			Gender:"Male",
 			Salary:16000,
 			Ysalary:180080,
-			Birthday:1470535903926
+			Birthday:"1470477704525"
 		},
 		{
 			Firstname:"kitty",
@@ -24,7 +24,7 @@ angular.module("myApp",[])
 			Gender:"Male",
 			Salary:15505,
 			Ysalary:149650,
-			Birthday:1470477904525
+			Birthday:"1380556916345"
 		},
 		{
 			Firstname:"jack",
@@ -32,7 +32,7 @@ angular.module("myApp",[])
 			Gender:"Female",
 			Salary:17532,
 			Ysalary:197532,
-			Birthday:1470556904525
+			Birthday:"1470477904525"
 		},
 		{
 			Firstname:"wang",
@@ -40,7 +40,7 @@ angular.module("myApp",[])
 			Gender:"Female",
 			Salary:18357,
 			Ysalary:149650,
-			Birthday:1380556916345
+			Birthday:"1470535903926"
 		}
 	]
 	$scope.one="Firstname";
