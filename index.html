@@ -13,26 +13,42 @@
 		<input type="button" value="search">
 		<table border="1">
 			<thead>
-				<tr>
+				<!-- <tr>
 					<th ng-click="one();a='false';b=!b">Firstname <em ng-class="{true:'disabled',false:'able'}[b]" ng-if="a"></em></th>
-
+				
 					<th ng-click="two();c='false';b=!b">Lastname<em ng-class="{true:'disabled',false:'able'}[b]" ng-if="c"></em></th>
-
+				
 					<th ng-click="three();d='false';b=!b">Gender<em ng-class="{true:'disabled',false:'able'}[b]" ng-if="d"></em></th>
 					<th ng-click="four();e='false';b=!b">Salary<em ng-class="{true:'disabled',false:'able'}[b]" ng-if="e"></em></th>
 					<th ng-click="five();f='false';b=!b">Ysalary<em ng-class="{true:'disabled',false:'able'}[b]" ng-if="f"></em></th>
 					<th ng-click="six();g='false';b=!b">Birthday<em ng-class="{true:'disabled',false:'able'}[b]" ng-if="g"></em></th>
+				</tr> -->
+				<tr>
+					<th ng-click="setSort('Firstname')">Firstname <em ng-class="addClass('Firstname')"></em></th>
+					<th ng-click="setSort('Lastname')">Lastname<em ng-class="addClass('Lastname')"></em></th>
+					<th ng-click="setSort('Gender')">Gender<em ng-class="addClass('Gender')"></em></th>
+					<th ng-click="setSort('Salary')">Salary<em ng-class="addClass('Salary')"></em></th>
+					<th ng-click="setSort('Ysalary')">Ysalary<em ng-class="addClass('Ysalary')"></em></th>
+					<th ng-click="setSort('Birthday')">Birthday<em ng-class="addClass('Birthday')"></em></th>
 				</tr>
 			</thead>
 			<tbody>
-				<tr ng-repeat="item in datas | filter:searchtext1 | filter:searchtext2 | orderBy:value">
+				<tr ng-repeat="data in datas | filter:searchtext1 | filter:searchtext2 | orderBy:sortColumn:reverse">
+					<td>{{data.Firstname}}</td>
+					<td>{{data.Lastname}}</td>
+					<td>{{data.Gender}}</td>
+					<td>{{data.Salary | currency:","}}</td>
+					<td>{{data.Ysalary | currency:"￥"}}</td>
+					<td>{{data.Birthday | date:"yyyy-mm-dd"}}</td>
+				</tr>
+				<!-- <tr ng-repeat="item in datas | filter:searchtext1 | filter:searchtext2 | orderBy:value">
 					<td>{{item.Firstname}}</td>
 					<td>{{item.Lastname}}</td>
 					<td>{{item.Gender}}</td>
 					<td>{{item.Salary | currency:","}}</td>
 					<td>{{item.Ysalary | currency:"￥"}}</td>
 					<td>{{item.Birthday | date:"yyyy-mm-dd"}}</td>
-				</tr>
+				</tr> -->
 			</tbody>
 		</table>
 	</div>

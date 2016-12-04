@@ -43,7 +43,19 @@ angular.module("myApp",[])
 			Birthday:"1470535903926"
 		}
 	]
-	$scope.one="Firstname";
+	$scope.datas=datas;
+	$scope.sortColumn="Firstname";
+	$scope.reverse=false;
+	$scope.setSort=function(column){
+		$scope.reverse=$scope.sortColumn==column?!$scope.reverse:false;
+		$scope.sortColumn=column;
+	}
+	$scope.addClass=function(column){
+		if($scope.sortColumn==column){
+			return $scope.reverse?"allow-up":"allow-down"
+		}
+	}
+	/*$scope.one="Firstname";
 	$scope.one="Salary";
 	$scope.bool=0;
 	$scope.datas=datas;
@@ -87,5 +99,5 @@ angular.module("myApp",[])
 			$scope.g="";
 
 		}
-	}
+	}*/
 }])
